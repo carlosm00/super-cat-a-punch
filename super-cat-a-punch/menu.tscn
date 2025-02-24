@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://hryapksmwx8p"]
+
+[ext_resource type="Script" path="res://menu.gd" id="1_xr2la"]
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_xr2la")
+
+[node name="Start" type="Button" parent="."]
+offset_left = 202.0
+offset_top = 336.0
+offset_right = 477.0
+offset_bottom = 446.0
+text = "Play"
+
+[node name="Quit" type="Button" parent="."]
+offset_left = 672.0
+offset_top = 334.0
+offset_right = 946.0
+offset_bottom = 448.0
+text = "Quit"
+
+[node name="QuitConfirmationDialog" type="ConfirmationDialog" parent="."]
+ok_button_text = "Yes, quit"
+dialog_text = "Are you sure you want to quit the game?"
