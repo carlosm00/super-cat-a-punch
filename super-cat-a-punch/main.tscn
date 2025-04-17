@@ -1,8 +1,8 @@
 [gd_scene load_steps=2 format=3 uid="uid://dqx60mnpd50qb"]
 
-[ext_resource type="Script" path="res://main.gd" id="1_0wks5"]
+[ext_resource type="Script" uid="uid://bsl1tayrhpolc" path="res://main.gd" id="1_0wks5"]
 
-[node name="main" type="Node2D"]
+[node name="Main" type="Node2D"]
 script = ExtResource("1_0wks5")
 
 [node name="init" type="Button" parent="."]

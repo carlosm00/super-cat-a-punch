@@ -6,7 +6,7 @@ func _ready():
 	$QuitConfirmationDialog.connect("confirmed", Callable(self, "_confirm_quit"))
 
 func _start_pressed():
-	get_tree().change_scene_to_file("res://game.tscn")
+	get_tree().change_scene_to_file("res://scene_1.tscn")
 
 
 func _quit_pressed():
