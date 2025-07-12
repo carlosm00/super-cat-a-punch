@@ -8,9 +8,9 @@ This intends to be a simple linear fighting game with some plataformer touches a
 - [ ] Main structure for scenes
 - [ ] Main structure for levels
 - [ ] Characters logic
-    - [] Jump
-    - [] Attacks
-    - [] Block
+    - [ ] Jump
+    - [ ] Attacks
+    - [ ] Block
 - [ ] Enemies logic
 - [ ] Bosses logic
 
