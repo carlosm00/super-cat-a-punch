@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://sa6yjhhbxwki"]
+
+[node name="LevelMenu" type="Node2D"]
+
+[node name="level1" type="Button" parent="."]
+offset_left = 128.0
+offset_top = 192.0
+offset_right = 384.0
+offset_bottom = 320.0
+text = "Level 1"
+
+[node name="level3" type="Button" parent="."]
+offset_left = 128.0
+offset_top = 384.0
+offset_right = 384.0
+offset_bottom = 512.0
+text = "Level 3"
+
+[node name="level2" type="Button" parent="."]
+offset_left = 768.0
+offset_top = 192.0
+offset_right = 1027.0
+offset_bottom = 328.0
+text = "Level 2"
+
+[node name="level4" type="Button" parent="."]
+offset_left = 768.0
+offset_top = 384.0
+offset_right = 1024.0
+offset_bottom = 512.0
+text = "Level 4"
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_left = 176.0
+offset_top = 64.0
+offset_right = 991.0
+offset_bottom = 126.0
+text = "Select the level of the story you want to play!"
+placeholder_text = "Select the level of the story you want to play!"
+editable = false
+selecting_enabled = false
