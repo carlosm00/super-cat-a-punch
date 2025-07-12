@@ -1,6 +1,9 @@
-[gd_scene format=3 uid="uid://sa6yjhhbxwki"]
+[gd_scene load_steps=2 format=3 uid="uid://sa6yjhhbxwki"]
+
+[ext_resource type="Script" uid="uid://ceodhauutblk2" path="res://level_menu.gd" id="1_j1r4r4"]
 
 [node name="LevelMenu" type="Node2D"]
+script = ExtResource("1_j1r4r4")
 
 [node name="level1" type="Button" parent="."]
 offset_left = 128.0

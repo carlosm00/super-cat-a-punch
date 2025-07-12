@@ -32,3 +32,4 @@ This intends to be a simple linear fighting game with some plataformer touches a
 - [ ] Scenes transitions
 - [ ] Levels transitions
 - [ ] Story texts
+- [ ] Confirm Keys mapping
