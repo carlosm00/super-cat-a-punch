@@ -1,0 +1,98 @@
+[gd_scene load_steps=7 format=3 uid="uid://x3a2fsa0168e"]
+
+[ext_resource type="Script" uid="uid://bdy01u6posxm5" path="res://levels/lvl1/lvl1_1.gd" id="1_c35kq"]
+[ext_resource type="PackedScene" uid="uid://ykrgyq8kha2e" path="res://players/player1.tscn" id="2_axk4b"]
+[ext_resource type="PackedScene" uid="uid://by5x3b2tw5t7k" path="res://enemies/drunk/drunk.tscn" id="3_nym33"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1abo5"]
+size = Vector2(179.5, 516.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_knagl"]
+size = Vector2(265, 63.75)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kl852"]
+size = Vector2(3800.5, 175)
+
+[node name="scene1" type="Node2D"]
+script = ExtResource("1_c35kq")
+
+[node name="player1" parent="." instance=ExtResource("2_axk4b")]
+position = Vector2(384, 434)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="left_wall" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-90.25, 212.875)
+shape = SubResource("RectangleShape2D_1abo5")
+
+[node name="left_wall2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(3693, 242)
+shape = SubResource("RectangleShape2D_1abo5")
+
+[node name="float" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1148.5, 33.5)
+shape = SubResource("RectangleShape2D_knagl")
+
+[node name="float2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(557, 265.75)
+shape = SubResource("RectangleShape2D_knagl")
+
+[node name="float3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1751, 435)
+shape = SubResource("RectangleShape2D_knagl")
+
+[node name="float4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(3044, 33.125)
+shape = SubResource("RectangleShape2D_knagl")
+
+[node name="float5" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(2478, 283)
+shape = SubResource("RectangleShape2D_knagl")
+
+[node name="floor" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1721.75, 557)
+shape = SubResource("RectangleShape2D_kl852")
+
+[node name="panel" type="Panel" parent="StaticBody2D"]
+offset_left = -179.0
+offset_top = 471.0
+offset_right = 3624.0
+offset_bottom = 648.0
+
+[node name="panel5" type="Panel" parent="StaticBody2D"]
+offset_left = 1018.0
+offset_top = 1.0
+offset_right = 1284.0
+offset_bottom = 69.0
+
+[node name="panel4" type="Panel" parent="StaticBody2D"]
+offset_left = 424.0
+offset_top = 230.0
+offset_right = 690.0
+offset_bottom = 302.0
+
+[node name="panel3" type="Panel" parent="StaticBody2D"]
+offset_left = -181.0
+offset_top = -51.0
+offset_right = 3.0
+offset_bottom = 469.0
+
+[node name="panel6" type="Panel" parent="StaticBody2D"]
+offset_left = 1616.0
+offset_top = 401.0
+offset_right = 1882.0
+offset_bottom = 469.0
+
+[node name="panel7" type="Panel" parent="StaticBody2D"]
+offset_left = 2345.0
+offset_top = 247.0
+offset_right = 2611.0
+offset_bottom = 315.0
+
+[node name="panel8" type="Panel" parent="StaticBody2D"]
+offset_left = 2909.0
+offset_right = 3175.0
+offset_bottom = 68.0
+
+[node name="drunk" parent="." instance=ExtResource("3_nym33")]
+position = Vector2(2093, 228)

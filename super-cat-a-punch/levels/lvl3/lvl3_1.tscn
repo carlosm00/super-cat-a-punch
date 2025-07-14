@@ -1,7 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://x3a2fsa0168e"]
+[gd_scene load_steps=6 format=3 uid="uid://cvqwgg10hrjnx"]
 
-[ext_resource type="Script" uid="uid://bdy01u6posxm5" path="res://levels/level_1.gd" id="1_3xosi"]
-[ext_resource type="PackedScene" uid="uid://ykrgyq8kha2e" path="res://Players/Player1.tscn" id="3_1abo5"]
+[ext_resource type="Script" uid="uid://c7wy71dlu2bpo" path="res://levels/lvl3/lvl3_1.gd" id="1_5ds5x"]
+[ext_resource type="PackedScene" uid="uid://ykrgyq8kha2e" path="res://players/player1.tscn" id="2_4x8sm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1abo5"]
 size = Vector2(257, 742.5)
@@ -13,9 +13,9 @@ size = Vector2(257, 742.5)
 size = Vector2(1295, 351)
 
 [node name="scene1" type="Node2D"]
-script = ExtResource("1_3xosi")
+script = ExtResource("1_5ds5x")
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("3_1abo5")]
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_4x8sm")]
 position = Vector2(384, 434)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
