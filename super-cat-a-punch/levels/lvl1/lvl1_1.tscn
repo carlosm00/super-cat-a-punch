@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://x3a2fsa0168e"]
+[gd_scene format=3 uid="uid://x3a2fsa0168e"]
 
 [ext_resource type="Script" uid="uid://bdy01u6posxm5" path="res://levels/lvl1/lvl1_1.gd" id="1_c35kq"]
-[ext_resource type="PackedScene" uid="uid://ykrgyq8kha2e" path="res://players/player1.tscn" id="2_axk4b"]
-[ext_resource type="PackedScene" uid="uid://by5x3b2tw5t7k" path="res://enemies/drunk/drunk.tscn" id="3_nym33"]
+[ext_resource type="PackedScene" uid="uid://by5x3b2tw5t7k" path="res://characters/enemies/drunk/drunk.tscn" id="3_nym33"]
+[ext_resource type="PackedScene" uid="uid://cxt0iv68s5yjh" path="res://characters/players/sergio/sergio.tscn" id="3_sxkxh"]
+[ext_resource type="PackedScene" path="res://menus/pause_menu.tscn" id="4_pause"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1abo5"]
 size = Vector2(179.5, 516.25)
@@ -13,86 +14,93 @@ size = Vector2(265, 63.75)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kl852"]
 size = Vector2(3800.5, 175)
 
-[node name="scene1" type="Node2D"]
+[node name="Scene1" type="Node2D" unique_id=1093646087]
 script = ExtResource("1_c35kq")
 
-[node name="player1" parent="." instance=ExtResource("2_axk4b")]
-position = Vector2(384, 434)
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=781933653]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-
-[node name="left_wall" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-90.25, 212.875)
+[node name="LeftWall" type="CollisionShape2D" parent="StaticBody2D" unique_id=1323914356]
+position = Vector2(-93, 371)
 shape = SubResource("RectangleShape2D_1abo5")
 
-[node name="left_wall2" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(3693, 242)
+[node name="LeftWall2" type="CollisionShape2D" parent="StaticBody2D" unique_id=347789398]
+position = Vector2(3705, 367)
 shape = SubResource("RectangleShape2D_1abo5")
 
-[node name="float" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(1148.5, 33.5)
+[node name="Float" type="CollisionShape2D" parent="StaticBody2D" unique_id=798609506]
+position = Vector2(1155.5, 186.5)
 shape = SubResource("RectangleShape2D_knagl")
 
-[node name="float2" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(557, 265.75)
+[node name="Float2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1844997302]
+position = Vector2(564, 418.75)
 shape = SubResource("RectangleShape2D_knagl")
 
-[node name="float3" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(1751, 435)
+[node name="Float3" type="CollisionShape2D" parent="StaticBody2D" unique_id=453236267]
+position = Vector2(1759, 591)
 shape = SubResource("RectangleShape2D_knagl")
 
-[node name="float4" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(3044, 33.125)
+[node name="Float4" type="CollisionShape2D" parent="StaticBody2D" unique_id=1611212906]
+position = Vector2(3032, 262.125)
 shape = SubResource("RectangleShape2D_knagl")
 
-[node name="float5" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(2478, 283)
+[node name="Float5" type="CollisionShape2D" parent="StaticBody2D" unique_id=1294511846]
+position = Vector2(2403, 413)
 shape = SubResource("RectangleShape2D_knagl")
 
-[node name="floor" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(1721.75, 557)
+[node name="Floor" type="CollisionShape2D" parent="StaticBody2D" unique_id=2002795866]
+position = Vector2(1729.75, 713)
 shape = SubResource("RectangleShape2D_kl852")
 
-[node name="panel" type="Panel" parent="StaticBody2D"]
-offset_left = -179.0
-offset_top = 471.0
-offset_right = 3624.0
-offset_bottom = 648.0
+[node name="Panel" type="Panel" parent="StaticBody2D" unique_id=758241928]
+offset_left = -171.0
+offset_top = 625.0
+offset_right = 3632.0
+offset_bottom = 804.0
 
-[node name="panel5" type="Panel" parent="StaticBody2D"]
-offset_left = 1018.0
-offset_top = 1.0
-offset_right = 1284.0
-offset_bottom = 69.0
+[node name="Panel5" type="Panel" parent="StaticBody2D" unique_id=575261149]
+offset_left = 1025.0
+offset_top = 154.0
+offset_right = 1291.0
+offset_bottom = 222.0
 
-[node name="panel4" type="Panel" parent="StaticBody2D"]
-offset_left = 424.0
-offset_top = 230.0
-offset_right = 690.0
-offset_bottom = 302.0
+[node name="Panel4" type="Panel" parent="StaticBody2D" unique_id=1128480561]
+offset_left = 431.0
+offset_top = 383.0
+offset_right = 697.0
+offset_bottom = 455.0
 
-[node name="panel3" type="Panel" parent="StaticBody2D"]
-offset_left = -181.0
-offset_top = -51.0
-offset_right = 3.0
-offset_bottom = 469.0
+[node name="Panel3" type="Panel" parent="StaticBody2D" unique_id=226502407]
+offset_left = -187.0
+offset_top = 106.0
+offset_right = -3.0
+offset_bottom = 626.0
+metadata/_edit_use_anchors_ = true
 
-[node name="panel6" type="Panel" parent="StaticBody2D"]
-offset_left = 1616.0
-offset_top = 401.0
-offset_right = 1882.0
-offset_bottom = 469.0
+[node name="Panel6" type="Panel" parent="StaticBody2D" unique_id=1370894199]
+offset_left = 1624.0
+offset_top = 557.0
+offset_right = 1890.0
+offset_bottom = 625.0
 
-[node name="panel7" type="Panel" parent="StaticBody2D"]
-offset_left = 2345.0
-offset_top = 247.0
-offset_right = 2611.0
-offset_bottom = 315.0
+[node name="Panel7" type="Panel" parent="StaticBody2D" unique_id=923235108]
+offset_left = 2270.0
+offset_top = 377.0
+offset_right = 2536.0
+offset_bottom = 445.0
 
-[node name="panel8" type="Panel" parent="StaticBody2D"]
-offset_left = 2909.0
-offset_right = 3175.0
-offset_bottom = 68.0
+[node name="Panel8" type="Panel" parent="StaticBody2D" unique_id=1730651516]
+offset_left = 2897.0
+offset_top = 229.0
+offset_right = 3163.0
+offset_bottom = 297.0
 
-[node name="drunk" parent="." instance=ExtResource("3_nym33")]
-position = Vector2(2093, 228)
+[node name="Drunk" parent="." unique_id=1800088898 instance=ExtResource("3_nym33")]
+position = Vector2(866, 590)
+
+[node name="Drunk" parent="." unique_id=1759631086 instance=ExtResource("3_nym33")]
+position = Vector2(1079, 589)
+
+[node name="Sergio" parent="." unique_id=617752558 instance=ExtResource("3_sxkxh")]
+position = Vector2(77, 594)
+
+[node name="PauseMenu" parent="." instance=ExtResource("4_pause")]

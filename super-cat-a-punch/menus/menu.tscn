@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://hryapksmwx8p"]
+
+[ext_resource type="Script" uid="uid://cktsptblwkyv5" path="res://menus/menu.gd" id="1_xr2la"]
+
+[node name="Menu" type="Control" unique_id=296592664]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1_xr2la")
+
+[node name="Start" type="Button" parent="." unique_id=481506240]
+layout_mode = 0
+offset_left = 202.0
+offset_top = 336.0
+offset_right = 477.0
+offset_bottom = 446.0
+focus_neighbor_right = NodePath("../Quit")
+focus_next = NodePath("../Quit")
+text = "Play"
+
+[node name="Quit" type="Button" parent="." unique_id=539260277]
+layout_mode = 0
+offset_left = 672.0
+offset_top = 334.0
+offset_right = 946.0
+offset_bottom = 448.0
+focus_neighbor_left = NodePath("../Start")
+focus_previous = NodePath("../Start")
+text = "Quit"
+
+[node name="QuitConfirmationDialog" type="ConfirmationDialog" parent="." unique_id=1666607246]
+oversampling_override = 1.0
+size = Vector2i(329, 100)
+ok_button_text = "Yes, quit"
+dialog_text = "Are you sure you want to quit the game?"

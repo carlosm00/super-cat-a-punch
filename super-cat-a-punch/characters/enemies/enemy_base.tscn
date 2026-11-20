@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://k0sger3225ox"]
+
+[ext_resource type="PackedScene" uid="uid://ykrgyq8kha2e" path="res://characters/character_base.tscn" id="1_kvjwy"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kvjwy"]
+
+[node name="Enemy" unique_id=617752558 instance=ExtResource("1_kvjwy")]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Visuals" parent_id_path=PackedInt32Array(1075653689) index="2" unique_id=1815883477]
+sprite_frames = SubResource("SpriteFrames_kvjwy")

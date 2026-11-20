@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://sa6yjhhbxwki"]
+
+[ext_resource type="Script" path="res://menus/level_menu.gd" id="1_pn7b2"]
+
+[node name="LevelMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1_pn7b2")
+
+[node name="Level1" type="Button" parent="." unique_id=2026931654]
+offset_left = 128.0
+offset_top = 192.0
+offset_right = 384.0
+offset_bottom = 320.0
+text = "Level 1"
+focus_neighbor_right = NodePath("../Level2")
+focus_neighbor_down = NodePath("../Level3")
+focus_next = NodePath("../Level2")
+
+[node name="Level3" type="Button" parent="." unique_id=1044971058]
+offset_left = 128.0
+offset_top = 384.0
+offset_right = 384.0
+offset_bottom = 512.0
+text = "Level 3"
+focus_neighbor_right = NodePath("../Level4")
+focus_neighbor_up = NodePath("../Level1")
+focus_neighbor_down = NodePath("../Back")
+focus_next = NodePath("../Level4")
+
+[node name="Level2" type="Button" parent="." unique_id=1457643275]
+offset_left = 768.0
+offset_top = 192.0
+offset_right = 1027.0
+offset_bottom = 328.0
+text = "Level 2"
+focus_neighbor_left = NodePath("../Level1")
+focus_neighbor_down = NodePath("../Level4")
+focus_previous = NodePath("../Level1")
+
+[node name="Level4" type="Button" parent="." unique_id=1087300577]
+offset_left = 768.0
+offset_top = 384.0
+offset_right = 1024.0
+offset_bottom = 512.0
+text = "Level 4"
+focus_neighbor_left = NodePath("../Level3")
+focus_neighbor_up = NodePath("../Level2")
+focus_neighbor_down = NodePath("../Back")
+focus_previous = NodePath("../Level3")
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=182484722]
+offset_left = 176.0
+offset_top = 64.0
+offset_right = 991.0
+offset_bottom = 126.0
+text = "Select the level of the story you want to play!"
+placeholder_text = "Select the level of the story you want to play!"
+editable = false
+selecting_enabled = false
+
+[node name="Back" type="Button" parent="."]
+offset_left = 32.0
+offset_top = 560.0
+offset_right = 192.0
+offset_bottom = 624.0
+text = "Back"
+focus_neighbor_up = NodePath("../Level3")

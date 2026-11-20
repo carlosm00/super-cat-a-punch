@@ -1,14 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://dqx60mnpd50qb"]
+[gd_scene format=3 uid="uid://dqx60mnpd50qb"]
 
 [ext_resource type="Script" uid="uid://bsl1tayrhpolc" path="res://main.gd" id="1_0wks5"]
 
-[node name="Main" type="Node2D"]
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
 script = ExtResource("1_0wks5")
 
-[node name="init" type="Button" parent="."]
+[node name="Init" type="Button" parent="."]
 offset_left = 297.0
 offset_top = 229.0
 offset_right = 884.0
 offset_bottom = 380.0
-tooltip_text = "Click to start..."
+tooltip_text = "Press any button to continue..."
 text = "Super Cat A Punch: The Game"

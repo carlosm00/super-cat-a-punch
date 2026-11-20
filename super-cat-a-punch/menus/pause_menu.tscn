@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://c2fpu77vqjeq0"]
+
+[ext_resource type="Script" uid="uid://cewohtlntylqj" path="res://menus/pause_menu.gd" id="1"]
+
+[node name="PauseMenu" type="CanvasLayer" unique_id=184177813]
+process_mode = 3
+script = ExtResource("1")
+
+[node name="PausePanel" type="Panel" parent="." unique_id=1856960033]
+process_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -150.0
+offset_right = 150.0
+offset_bottom = 150.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PausePanel" unique_id=879611326]
+process_mode = 3
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = -20.0
+
+[node name="Label" type="Label" parent="PausePanel/VBoxContainer" unique_id=1976526134]
+process_mode = 3
+layout_mode = 2
+text = "Paused"
+horizontal_alignment = 1
+
+[node name="Resume" type="Button" parent="PausePanel/VBoxContainer" unique_id=1028646627]
+process_mode = 3
+layout_mode = 2
+focus_next = NodePath("../MainMenu")
+text = "Resume"
+
+[node name="MainMenu" type="Button" parent="PausePanel/VBoxContainer" unique_id=1074563670]
+process_mode = 3
+layout_mode = 2
+focus_next = NodePath("../Quit")
+focus_previous = NodePath("../Resume")
+text = "Main Menu"
+
+[node name="Quit" type="Button" parent="PausePanel/VBoxContainer" unique_id=1065458089]
+process_mode = 3
+layout_mode = 2
+focus_previous = NodePath("../MainMenu")
+text = "Quit"
+
+[node name="QuitConfirmationDialog" type="ConfirmationDialog" parent="." unique_id=1423794703]
+process_mode = 3
+oversampling_override = 1.0
+size = Vector2i(647, 100)
+ok_button_text = "Yes, quit"
+dialog_text = "Any progress since your last save point will be lost. Are you sure you want to quit?"
+
+[node name="MainMenuConfirmationDialog" type="ConfirmationDialog" parent="." unique_id=1109500526]
+process_mode = 3
+oversampling_override = 1.0
+size = Vector2i(809, 100)
+ok_button_text = "Yes, go to main menu"
+dialog_text = "Any progress since your last save point will be lost. Are you sure you want to return to the main menu?"
