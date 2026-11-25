@@ -23,6 +23,7 @@ config/features=PackedStringArray("4.7", "Forward Plus")
 
 Game="*res://global/game.gd"
 Utils="*res://global/utils.gd"
+RoomManager="*res://managers/room_manager.gd"
 
 [display]
 

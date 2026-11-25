@@ -13,14 +13,17 @@ func _ready():
 	hide()
 
 func _input(event):
+	# Pause option leads to pause menu
 	if event.is_action_pressed("pause"):
 		toggle()
 		get_viewport().set_input_as_handled()
+	# Options logic and visualization of Pause menu
 	elif event.is_action_pressed("ui_cancel"):
 		if $QuitConfirmationDialog.visible:
 			$QuitConfirmationDialog.hide()
 			_on_quit_canceled()
 			get_viewport().set_input_as_handled()
+		# 
 		elif $MainMenuConfirmationDialog.visible:
 			$MainMenuConfirmationDialog.hide()
 			_on_main_menu_canceled()
@@ -34,12 +37,12 @@ func toggle():
 		resume()
 	else:
 		pause()
-
+# Pause-the-game logic
 func pause():
 	show()
 	get_tree().paused = true
 	$PausePanel/VBoxContainer/Resume.grab_focus()
-
+# Continuing game
 func resume():
 	hide()
 	get_tree().paused = false

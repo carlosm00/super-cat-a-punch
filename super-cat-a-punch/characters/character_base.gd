@@ -19,7 +19,6 @@ var attacking = false
 var already_hit = []
 var invulnerable = false
 
-
 func _physics_process(delta: float) -> void:
 	# When player is not on the floor, we consider it's falling/jumping
 	if not is_on_floor():
@@ -61,6 +60,8 @@ func take_damage(amount):
 	# Health reduction logic
 	health -= amount
 	print("Character took damage: ", amount, " | HP:", health)
+	update_health_bar()
+
 
 	# Death consideration
 	if health <= 0:
@@ -81,3 +82,12 @@ func play_death():
 
 func play_attack():
 	pass
+
+func update_health_bar() -> void:
+	var hud = get_tree().get_first_node_in_group("hud")
+	print("Found HUD")
+
+	if hud != null:
+		hud.update_health(health)
+	else:
+		print("No se ha encontrado el HUD")

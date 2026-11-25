@@ -7,6 +7,8 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_xr2la")
 
 [node name="Start" type="Button" parent="." unique_id=481506240]
@@ -31,6 +33,7 @@ text = "Quit"
 
 [node name="QuitConfirmationDialog" type="ConfirmationDialog" parent="." unique_id=1666607246]
 oversampling_override = 1.0
+position = Vector2i(0, 36)
 size = Vector2i(329, 100)
 ok_button_text = "Yes, quit"
 dialog_text = "Are you sure you want to quit the game?"

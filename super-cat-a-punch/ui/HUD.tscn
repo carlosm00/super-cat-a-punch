@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://cxrl5pdwj2g5d"]
+
+[ext_resource type="PackedScene" uid="uid://6v8kdg33ftfu" path="res://items/heart.tscn" id="1_1x8ju"]
+[ext_resource type="Script" uid="uid://b82gcnhgqbtor" path="res://ui/hud.gd" id="1_aaqae"]
+
+[node name="Hud" type="CanvasLayer" unique_id=1759763724 groups=["hud"]]
+script = ExtResource("1_aaqae")
+
+[node name="Control" type="Control" parent="." unique_id=1859251461]
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+offset_right = -1152.0
+grow_horizontal = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control" unique_id=1274679655]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+layout_direction = 2
+
+[node name="heart" parent="Control/HBoxContainer" unique_id=338909860 instance=ExtResource("1_1x8ju")]
+position = Vector2(80, 64)
+
+[node name="Heart4" parent="Control/HBoxContainer" unique_id=1524564100 instance=ExtResource("1_1x8ju")]
+position = Vector2(216, 64)
+
+[node name="Heart5" parent="Control/HBoxContainer" unique_id=1243697850 instance=ExtResource("1_1x8ju")]
+position = Vector2(168, 64)
+
+[node name="Heart6" parent="Control/HBoxContainer" unique_id=848928621 instance=ExtResource("1_1x8ju")]
+position = Vector2(128, 64)
+
+[node name="Heart7" parent="Control/HBoxContainer" unique_id=1678467501 instance=ExtResource("1_1x8ju")]
+position = Vector2(264, 64)

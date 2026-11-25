@@ -7,6 +7,10 @@
 [ext_resource type="Texture2D" uid="uid://duwsej2kqe8lb" path="res://assets/player/sergio/sergio_jump.png" id="5_4vbs0"]
 [ext_resource type="Texture2D" uid="uid://cot5ij368peoa" path="res://assets/player/sergio/sergio_move.png" id="6_q8b0m"]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ls2n8"]
+radius = 12.0
+height = 48.0
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_b3qm8"]
 atlas = ExtResource("3_lcgvp")
 region = Rect2(0, 0, 64, 64)
@@ -245,9 +249,13 @@ animations = [{
 
 [node name="Sergio" unique_id=617752558 instance=ExtResource("1_lbn1e")]
 script = ExtResource("1_q3lat")
+health = 4
+
+[node name="SolidArea" parent="." index="0" unique_id=1031821336]
+shape = SubResource("CapsuleShape2D_ls2n8")
 
 [node name="Camera2D" parent="." index="1" unique_id=1264981958]
-zoom = Vector2(2, 2)
+zoom = Vector2(3, 3)
 
 [node name="AnimatedSprite2D" parent="Visuals" parent_id_path=PackedInt32Array(1075653689) index="0" unique_id=519123030]
 texture_filter = 1

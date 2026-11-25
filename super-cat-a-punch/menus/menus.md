@@ -20,5 +20,5 @@ Cancellations and quiting buttons lead to confirmation pop ups.
 Menus are Control or Canvas nodes so that their buttons are navegable with keyboard and game controler (mando?).
 
 ## Technical Debt to resolve
-- On pause menu > main menu/quit pop up is not cancellable with ui_cancel or button 1.
-- Main menu > quit pop up is not cancellable with ui_cancel or button 1.
+- On pause menu: main menu/quit pop up is not cancellable with ui_cancel or button 1.
+- Main menu: quit pop up is not cancellable with ui_cancel or button 1.
