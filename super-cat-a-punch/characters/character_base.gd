@@ -8,7 +8,7 @@ signal hit
 # General variables
 @export var speed = 200.0
 @export var attack_damage = 1
-@export var health = 10
+@export var health = 5
 @onready var visuals = $Visuals
 @onready var attack_area = $Visuals/AttackArea
 @onready var sprite: AnimatedSprite2D = $Visuals/AnimatedSprite2D
@@ -90,4 +90,4 @@ func update_health_bar() -> void:
 	if hud != null:
 		hud.update_health(health)
 	else:
-		print("No se ha encontrado el HUD")
+		print("HUD not found")

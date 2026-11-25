@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bjodhth8olnit" path="res://assets/player/sergio/sergio_attacks.png" id="3_lcgvp"]
 [ext_resource type="Texture2D" uid="uid://duwsej2kqe8lb" path="res://assets/player/sergio/sergio_jump.png" id="5_4vbs0"]
 [ext_resource type="Texture2D" uid="uid://cot5ij368peoa" path="res://assets/player/sergio/sergio_move.png" id="6_q8b0m"]
+[ext_resource type="PackedScene" uid="uid://cxrl5pdwj2g5d" path="res://ui/HUD.tscn" id="7_4vbs0"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ls2n8"]
 radius = 12.0
@@ -249,7 +250,6 @@ animations = [{
 
 [node name="Sergio" unique_id=617752558 instance=ExtResource("1_lbn1e")]
 script = ExtResource("1_q3lat")
-health = 4
 
 [node name="SolidArea" parent="." index="0" unique_id=1031821336]
 shape = SubResource("CapsuleShape2D_ls2n8")
@@ -267,3 +267,5 @@ frame_progress = 0.1717319
 
 [node name="CollisionShape2D" parent="Visuals/AttackArea" parent_id_path=PackedInt32Array(1008798265) index="0" unique_id=1890779349]
 position = Vector2(16, -5)
+
+[node name="Hud" parent="." index="3" unique_id=1759763724 instance=ExtResource("7_4vbs0")]

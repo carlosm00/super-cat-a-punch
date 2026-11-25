@@ -13,23 +13,48 @@ anchor_right = 1.0
 offset_right = -1152.0
 grow_horizontal = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Control" unique_id=1274679655]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-layout_direction = 2
+[node name="HeartsBox" type="HBoxContainer" parent="Control" unique_id=1274679655]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+offset_left = 120.0
+offset_top = 80.0
+offset_right = 280.0
+offset_bottom = 80.0
+localize_numeral_system = false
+theme_override_constants/separation = 40
 
-[node name="heart" parent="Control/HBoxContainer" unique_id=338909860 instance=ExtResource("1_1x8ju")]
-position = Vector2(80, 64)
+[node name="heart" type="TextureRect" parent="Control/HeartsBox" unique_id=956654474]
+layout_mode = 2
+size_flags_vertical = 4
+offset_transform_enabled = true
 
-[node name="Heart4" parent="Control/HBoxContainer" unique_id=1524564100 instance=ExtResource("1_1x8ju")]
-position = Vector2(216, 64)
+[node name="heart" parent="Control/HeartsBox/heart" unique_id=338909860 instance=ExtResource("1_1x8ju")]
 
-[node name="Heart5" parent="Control/HBoxContainer" unique_id=1243697850 instance=ExtResource("1_1x8ju")]
-position = Vector2(168, 64)
+[node name="heart2" type="TextureRect" parent="Control/HeartsBox" unique_id=1097915584]
+layout_mode = 2
+size_flags_vertical = 4
+offset_transform_enabled = true
 
-[node name="Heart6" parent="Control/HBoxContainer" unique_id=848928621 instance=ExtResource("1_1x8ju")]
-position = Vector2(128, 64)
+[node name="heart" parent="Control/HeartsBox/heart2" unique_id=642534813 instance=ExtResource("1_1x8ju")]
 
-[node name="Heart7" parent="Control/HBoxContainer" unique_id=1678467501 instance=ExtResource("1_1x8ju")]
-position = Vector2(264, 64)
+[node name="heart3" type="TextureRect" parent="Control/HeartsBox" unique_id=1360673520]
+layout_mode = 2
+size_flags_vertical = 4
+offset_transform_enabled = true
+
+[node name="heart" parent="Control/HeartsBox/heart3" unique_id=2033237079 instance=ExtResource("1_1x8ju")]
+
+[node name="heart4" type="TextureRect" parent="Control/HeartsBox" unique_id=798432907]
+layout_mode = 2
+size_flags_vertical = 4
+offset_transform_enabled = true
+
+[node name="heart" parent="Control/HeartsBox/heart4" unique_id=2007984077 instance=ExtResource("1_1x8ju")]
+
+[node name="heart5" type="TextureRect" parent="Control/HeartsBox" unique_id=1210715408]
+layout_mode = 2
+size_flags_vertical = 4
+offset_transform_enabled = true
+
+[node name="heart" parent="Control/HeartsBox/heart5" unique_id=144771968 instance=ExtResource("1_1x8ju")]
